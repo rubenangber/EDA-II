@@ -22,7 +22,6 @@ int main(int argc, char const *argv[]) {
     int left = 0, right = TAM - 1, swapped = 1;
     while (swapped) {
         swapped = 0;
-        // Mover los elementos más grandes hacia el final
         for (int i = left; i < right; i++) {
             if (numeros[i] > numeros[i + 1]) {
                 int temp = numeros[i];
@@ -34,7 +33,6 @@ int main(int argc, char const *argv[]) {
         if (!swapped) break;
         swapped = 0;
         right--;
-        // Mover los elementos más pequeños hacia el principio
         for (int i = right - 1; i >= left; i--) {
             if (numeros[i] > numeros[i + 1]) {
                 int temp = numeros[i];

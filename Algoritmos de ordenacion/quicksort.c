@@ -37,7 +37,7 @@ int main(int argc, char const *argv[]) {
     srand(time(NULL));
 
     for (int i = 0; i < TAM; i++) {
-        numeros[i] = rand() % 10000; // Numeros entre 0 y 9999
+        numeros[i] = rand() % 10000; // Numeros entre 0 y 9999 
     }
 
     printf("DESORDENADO\n");
